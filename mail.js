@@ -20,9 +20,17 @@ function submitForm(e) {
     var sename = getElementVal('sename');
     var semail = getElementVal('semail');
     var senumber = getElementVal('senumber');
+
+    Swal.fire({
+        title: 'Sucesso!',
+        text: 'Você receberá seu Ebook dentro de algumas horas. Obrigado :)',
+        icon: 'success',
+        confirmButtonText: 'Ok!'
+        })
      
     saveMessages(sename, semail, senumber)
-}
+    }
+
 
 const saveMessages = (sename, semail, senumber) => {
     var newContactForm = contactFormDb.push();

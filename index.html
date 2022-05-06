@@ -184,15 +184,15 @@
 					<form class="signup-form row g-2 align-items-center" action="" id="contactForm">
 	                    <div class="mb-4">
 	                        <label class="sr-only" for="semail">Nome</label>
-	                        <input type="name" id="semail" name="semail1" class="form-control me-md-1 semail" placeholder="Seu nome">
+	                        <input type="name" id="semail" name="semail1" class="form-control me-md-1 semail" required placeholder="Seu nome">
 	                    </div>
 	                    <div class="mb-4">
 	                        <label class="sr-only" for="sename">Email</label>
-	                        <input type="email" id="sename" name="sename1" class="form-control me-md-1 semail" placeholder="Seu email">
+	                        <input type="email" id="sename" name="sename1" class="form-control me-md-1 semail" required placeholder="Seu email">
 	                    </div>
 	                    <div class="mb-4">
 	                        <label class="sr-only" for="senumber">Numero de Celular</label>
-	                        <input type="number" id="senumber" name="senumber1" class="form-control me-md-1 semail" placeholder="Seu número de celular">
+	                        <input type="number" id="senumber" name="senumber1" class="form-control me-md-1 semail" required placeholder="Seu número de celular">
 	                    </div>
 	                    <div class="mb-2">
 	                        <button type="submit" class="btn btn-primary btn-submit w-100">Enviar</button>
@@ -344,6 +344,9 @@
     
     <script src="assets/js/main.js"></script>
 	<script src="./mail.js"></script>
+
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="sweetalert2.all.min.js"></script>
 
 </body>
 </html> 
